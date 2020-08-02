@@ -1,0 +1,250 @@
+.wrapper {
+  margin: 0;
+  background: #edeef0;
+}
+
+.inline-white {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  border: 1px solid #e0e0e0;
+  margin: 0px 0px 3em 0px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+
+.ui.secondary.pointing.menu {
+  border: none;
+}
+
+.ui.secondary.pointing.menu .item {
+  margin: 0;
+}
+
+.ui.secondary.pointing.menu .active.item:hover {
+  border-color: #3499ff;
+  color: #3499ff;
+}
+
+.ui.secondary.pointing.menu .active.item {
+  border-color: #1e64ab;
+  border-bottom-width: 4px;
+  font-weight: 700;
+  color: #1e64ab;
+}
+
+.ui.menu {
+  font-size: 1.15rem;
+}
+
+div,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.container-card {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 2px;
+  padding: 16px;
+  transition: box-shadow 83ms;
+}
+
+.feed-following-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.follows-card {
+  align-items: stretch;
+  flex-basis: 25%;
+  flex-direction: column;
+  min-height: 250px;
+  margin-top: 12px;
+  padding: 0;
+}
+
+.follows-card {
+  display: flex;
+  border-radius: 0;
+}
+
+.follows-card:hover {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 6px 9px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 83ms;
+  padding: 0;
+  z-index: 1;
+}
+
+.follows-card__name {
+  font-size: 16px;
+}
+
+.follows-card__content {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+}
+
+.follows-card__content {
+  min-width: 0;
+  display: flex;
+  flex-grow: 1;
+}
+
+.follows-card__avatar-link {
+  margin-right: 8px;
+}
+
+a[href],
+button {
+  touch-action: manipulation;
+}
+
+.feed-shared-avatar-image {
+  overflow: hidden;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.b0 {
+  border: 0 !important;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  box-sizing: border-box;
+  background-clip: content-box;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.follows-card__info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  max-width: 192px;
+}
+.follows-card__info {
+  min-width: 0;
+}
+
+.follows-card__name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+.lt-line-clamp--multi-line {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.lt-line-clamp {
+  overflow: hidden;
+  position: relative;
+}
+.follows-card__headline {
+  font-size: 14px;
+  line-height: 1.4em;
+  -webkit-line-clamp: 2;
+}
+
+.done-btn {
+  color: #fff;
+  margin: 6px 0;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 167ms;
+  align-items: center;
+  border: none;
+  border-radius: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  display: inline-flex;
+  justify-content: center;
+  min-width: 6.4rem;
+  max-width: 480px;
+  background-color: #1e64ab;
+}
+
+.subtext {
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  color: #7f8183;
+}
+
+hr {
+  border: 0;
+  display: block;
+  height: 1px;
+  margin: 1rem 0 24px;
+  padding: 0;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+hr.divider {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  display: block;
+  height: 1px;
+  width: 50%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+
+.follow-btn {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 167ms;
+  align-items: center;
+  color: #727272;
+  font-size: 18px;
+  font-weight: 600;
+  height: 40px;
+  background: #fff;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.follow-btn:hover {
+  background-color: rgba(152, 216, 244, 0.25);
+  color: #006097;
+}
+
+.unfollow-btn {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 167ms;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+  color: #006097 !important;
+  background: #fff;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.unfollow-btn:hover {
+  background-color: rgba(152, 216, 244, 0.25);
+  color: #006097;
+}
+
+span {
+  outline: 0;
+}

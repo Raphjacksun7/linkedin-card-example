@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/mdb.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/nvgstyles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/semantic/dist/semantic.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/main.css" />
+
+    <title>NeverGivApp</title>
+  </head>
+  <body class="wrapper">
+    <div class="ui grid">
+      <div class="sixteen wide column">
+        <div class="inline-white">
+          <div class="ui container">
+            <div
+              class="ui pointing secondary menu nav nav-tabs nav-fill"
+              id="nav-tab"
+              role="tablist"
+            >
+              <a
+                class="item nav-item nav-link active"
+                id="nav-following-tab"
+                data-toggle="tab"
+                href="#nav-following"
+                role="tab"
+                aria-controls="nav-following"
+                aria-selected="true"
+              >
+                Following
+              </a>
+              <a
+                class="item nav-item nav-link"
+                id="nav-followers-tab"
+                data-toggle="tab"
+                href="#nav-followers"
+                role="tab"
+                aria-controls="nav-followers"
+                aria-selected="false"
+              >
+                Followers
+              </a>
+              <div class="right menu">
+                <button class="done-btn">
+                  Done
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="ui container">
+            <div class="tab-content mt-5" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="nav-following"
+                role="tabpanel"
+                aria-labelledby="nav-following-tab"
+              >
+                <ul class="feed-following-list mb-5">
+                  <li class="follows-card container-card">
+                    <div class="follows-card__content">
+                      <a
+                        target="_blank"
+                        href="#"
+                        class="follows-card__avatar-link"
+                      >
+                        <div
+                          class="follows-card__avatar feed-shared-avatar-image b0"
+                        >
+                          <img
+                            src="https://media-exp1.licdn.com/dms/image/C5103AQHd61HV5qnjHA/profile-displayphoto-shrink_100_100/0?e=1601510400&amp;v=beta&amp;t=1fraFdVwaQZNnQzzFCE3u7q3pWXhzjzghw8oLsbmr0Y"
+                            class="avatar"
+                          />
+                        </div>
+                      </a>
+                      <div class="follows-card__info">
+                        <a
+                          target="_blank"
+                          href="#"
+                          class="follows-card__profile-link"
+                        >
+                          <h3 class="follows-card__name">
+                            Mamavi Sylvain ATTIGLAH
+                          </h3>
+                          <p class="follows-card__headline">
+                            Economist -Analyst
+                          </p>
+                        </a>
+                        <span class="subtext">
+                          <hr class="divider" />
+                          113 posts cette semaine
+                        </span>
+                      </div>
+                    </div>
+                    <button
+                      data-control-name="actor_follow_toggle"
+                      aria-pressed="true"
+                      aria-label="Suivi"
+                      class="follow-btn"
+                      id="toggleBtn"
+                      onclick="togglebtn()"
+                    >
+                      <span aria-hidden="true">Suivi</span>
+                    </button>
+                  </li>
+                  <li class="follows-card container-card">
+                    <div class="follows-card__content">
+                      <a
+                        target="_blank"
+                        href="#"
+                        class="follows-card__avatar-link"
+                      >
+                        <div
+                          class="follows-card__avatar feed-shared-avatar-image b0"
+                        >
+                          <img
+                            src="https://media-exp1.licdn.com/dms/image/C5103AQHd61HV5qnjHA/profile-displayphoto-shrink_100_100/0?e=1601510400&amp;v=beta&amp;t=1fraFdVwaQZNnQzzFCE3u7q3pWXhzjzghw8oLsbmr0Y"
+                            class="avatar"
+                          />
+                        </div>
+                      </a>
+                      <div class="follows-card__info">
+                        <a
+                          target="_blank"
+                          href="#"
+                          class="follows-card__profile-link"
+                        >
+                          <h3 class="follows-card__name">
+                            Mamavi Sylvain ATTIGLAH
+                          </h3>
+                          <p class="follows-card__headline">
+                            Economist -Analyst
+                          </p>
+                        </a>
+                        <span class="subtext">
+                          <hr class="divider" />
+                          113 posts cette semaine
+                        </span>
+                      </div>
+                    </div>
+                    <button
+                      data-control-name="actor_follow_toggle"
+                      aria-pressed="true"
+                      aria-label="Suivi"
+                      class="follow-btn"
+                      id="toggleBtn"
+                      onclick="togglebtn()"
+                    >
+                      <span aria-hidden="true">Suivi</span>
+                    </button>
+                  </li>
+                  <li class="follows-card container-card">
+                    <div class="follows-card__content">
+                      <a
+                        target="_blank"
+                        href="#"
+                        class="follows-card__avatar-link"
+                      >
+                        <div
+                          class="follows-card__avatar feed-shared-avatar-image b0"
+                        >
+                          <img
+                            src="https://media-exp1.licdn.com/dms/image/C5103AQHd61HV5qnjHA/profile-displayphoto-shrink_100_100/0?e=1601510400&amp;v=beta&amp;t=1fraFdVwaQZNnQzzFCE3u7q3pWXhzjzghw8oLsbmr0Y"
+                            class="avatar"
+                          />
+                        </div>
+                      </a>
+                      <div class="follows-card__info">
+                        <a
+                          target="_blank"
+                          href="#"
+                          class="follows-card__profile-link"
+                        >
+                          <h3 class="follows-card__name">
+                            Mamavi Sylvain ATTIGLAH
+                          </h3>
+                          <p class="follows-card__headline">
+                            Economist -Analyst
+                          </p>
+                        </a>
+                        <span class="subtext">
+                          <hr class="divider" />
+                          113 posts cette semaine
+                        </span>
+                      </div>
+                    </div>
+                    <button
+                      data-control-name="actor_follow_toggle"
+                      aria-pressed="true"
+                      aria-label="Suivi"
+                      class="follow-btn"
+                      id="toggleBtn"
+                      onclick="togglebtn()"
+                    >
+                      <span aria-hidden="true">Suivi</span>
+                    </button>
+                  </li>
+                  <li class="follows-card container-card">
+                    <div class="follows-card__content">
+                      <a
+                        target="_blank"
+                        href="#"
+                        class="follows-card__avatar-link"
+                      >
+                        <div
+                          class="follows-card__avatar feed-shared-avatar-image b0"
+                        >
+                          <img
+                            src="https://media-exp1.licdn.com/dms/image/C5103AQHd61HV5qnjHA/profile-displayphoto-shrink_100_100/0?e=1601510400&amp;v=beta&amp;t=1fraFdVwaQZNnQzzFCE3u7q3pWXhzjzghw8oLsbmr0Y"
+                            class="avatar"
+                          />
+                        </div>
+                      </a>
+                      <div class="follows-card__info">
+                        <a
+                          target="_blank"
+                          href="#"
+                          class="follows-card__profile-link"
+                        >
+                          <h3 class="follows-card__name">
+                            Mamavi Sylvain ATTIGLAH
+                          </h3>
+                          <p class="follows-card__headline">
+                            Economist -Analyst
+                          </p>
+                        </a>
+                        <span class="subtext">
+                          <hr class="divider" />
+                          113 posts cette semaine
+                        </span>
+                      </div>
+                    </div>
+                    <button
+                      data-control-name="actor_follow_toggle"
+                      aria-pressed="true"
+                      aria-label="Suivi"
+                      class="follow-btn"
+                      id="toggleBtn"
+                      onclick="togglebtn()"
+                    >
+                      <span aria-hidden="true">Suivi</span>
+                    </button>
+                  </li>
+                  <li class="follows-card container-card">
+                    <div class="follows-card__content">
+                      <a
+                        target="_blank"
+                        href="#"
+                        class="follows-card__avatar-link"
+                      >
+                        <div
+                          class="follows-card__avatar feed-shared-avatar-image b0"
+                        >
+                          <img
+                            src="https://media-exp1.licdn.com/dms/image/C5103AQHd61HV5qnjHA/profile-displayphoto-shrink_100_100/0?e=1601510400&amp;v=beta&amp;t=1fraFdVwaQZNnQzzFCE3u7q3pWXhzjzghw8oLsbmr0Y"
+                            class="avatar"
+                          />
+                        </div>
+                      </a>
+                      <div class="follows-card__info">
+                        <a
+                          target="_blank"
+                          href="#"
+                          class="follows-card__profile-link"
+                        >
+                          <h3 class="follows-card__name">
+                            Mamavi Sylvain ATTIGLAH
+                          </h3>
+                          <p class="follows-card__headline">
+                            Economist -Analyst
+                          </p>
+                        </a>
+                        <span class="subtext">
+                          <hr class="divider" />
+                          113 posts cette semaine
+                        </span>
+                      </div>
+                    </div>
+                    <button
+                      data-control-name="actor_follow_toggle"
+                      aria-pressed="true"
+                      aria-label="Suivi"
+                      class="follow-btn"
+                      id="toggleBtn"
+                      onclick="togglebtn()"
+                    >
+                      <span aria-hidden="true">Suivi</span>
+                    </button>
+                  </li>
+                  <li class="follows-card container-card">
+                    <div class="follows-card__content">
+                      <a
+                        target="_blank"
+                        href="#"
+                        class="follows-card__avatar-link"
+                      >
+                        <div
+                          class="follows-card__avatar feed-shared-avatar-image b0"
+                        >
+                          <img
+                            src="https://media-exp1.licdn.com/dms/image/C5103AQHd61HV5qnjHA/profile-displayphoto-shrink_100_100/0?e=1601510400&amp;v=beta&amp;t=1fraFdVwaQZNnQzzFCE3u7q3pWXhzjzghw8oLsbmr0Y"
+                            class="avatar"
+                          />
+                        </div>
+                      </a>
+                      <div class="follows-card__info">
+                        <a
+                          target="_blank"
+                          href="#"
+                          class="follows-card__profile-link"
+                        >
+                          <h3 class="follows-card__name">
+                            Mamavi Sylvain ATTIGLAH
+                          </h3>
+                          <p class="follows-card__headline">
+                            Economist -Analyst
+                          </p>
+                        </a>
+                        <span class="subtext">
+                          <hr class="divider" />
+                          113 posts cette semaine
+                        </span>
+                      </div>
+                    </div>
+                    <button
+                      data-control-name="actor_follow_toggle"
+                      aria-pressed="true"
+                      aria-label="Suivi"
+                      class="follow-btn"
+                      id="toggleBtn"
+                      onclick="togglebtn()"
+                    >
+                      <span aria-hidden="true">Suivi</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-followers"
+                role="tabpanel"
+                aria-labelledby="nav-followers-tab"
+              >
+                <ul class="feed-following-list mb-5">
+                  <li class="follows-card container-card">
+                    <div class="follows-card__content">
+                      <a
+                        target="_blank"
+                        href="#"
+                        class="follows-card__avatar-link"
+                      >
+                        <div
+                          class="follows-card__avatar feed-shared-avatar-image b0"
+                        >
+                          <img
+                            src="https://media-exp1.licdn.com/dms/image/C4E03AQH684B3Fex7Aw/profile-displayphoto-shrink_100_100/0?e=1601510400&amp;v=beta&amp;t=NnyVi0iG6osv6kgqcy5squXlfSfd4gYkIfrwxJynN9g"
+                            class="avatar"
+                          />
+                        </div>
+                      </a>
+                      <div class="follows-card__info">
+                        <a
+                          target="_blank"
+                          href="#"
+                          class="follows-card__profile-link"
+                        >
+                          <h3 class="follows-card__name">
+                            Alex Sylvain ATTIGLAH
+                          </h3>
+                          <p class="follows-card__headline">
+                            Math -Analyst
+                          </p>
+                        </a>
+                        <span class="subtext">
+                          <hr class="divider" />
+                          115 posts cette semaine
+                        </span>
+                      </div>
+                    </div>
+                    <button
+                      data-control-name="actor_follow_toggle"
+                      aria-pressed="true"
+                      aria-label="Suivi"
+                      class="follow-btn"
+                      id="toggleBtn2"
+                      onclick="togglebtn2()"
+                    >
+                      <span aria-hidden="true">Suivi</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/semantic/dist/semantic.min.js"></script>
+    <script>
+      function togglebtn() {
+        let button = document.getElementById("toggleBtn");
+        button.classList.toggle("unfollow-btn");
+      }
+      function togglebtn2() {
+        let button = document.getElementById("toggleBtn2");
+        button.classList.toggle("unfollow-btn");
+      }
+    </script>
+  </body>
+</html>
